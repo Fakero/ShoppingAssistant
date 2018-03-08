@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuBtnShoppingList"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="@string/shoppingList"/>
+    <item android:id="@+id/menuBtnPriceCalculator"
+        android:icon="@drawable/ic_iso_black_24dp"
+        android:title="@string/priceCalculator"/>
+    <item android:id="@+id/menuBtnShoppingBasket"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/shoppingBasket"/>
+</menu>

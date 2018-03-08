@@ -1,0 +1,250 @@
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/calculatorFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fakero.shoppingassistant.CalculatorFragment">
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+    to prevent the dummy from receiving focus again -->
+    <AutoCompleteTextView android:id="@+id/autotext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:nextFocusUp="@id/autotext"
+        android:nextFocusLeft="@id/autotext"/>
+
+    <TextView
+        android:id="@+id/calculatorItemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@+id/calculatorItemNameEditText"
+        android:text="@string/textName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/calculatorItemNameEditText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorItemNameTextView" />
+
+    <TextView
+        android:id="@+id/calculatorPriceTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@+id/calculatorPriceEditText"
+        android:text="@string/unitPrice"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/calculatorDiscountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorItemNameEditText" />
+
+    <EditText
+        android:id="@+id/calculatorPriceEditText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-1dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/calculatorDiscountEditText"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorPriceTextView" />
+
+    <TextView
+        android:id="@+id/calculatorDiscountTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:labelFor="@+id/calculatorDiscountEditText"
+        android:text="@string/discount"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorPriceTextView"
+        app:layout_constraintLeft_toRightOf="@id/calculatorPriceTextView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/calculatorDiscountEditText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/calculatorPriceEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorDiscountTextView" />
+
+    <TextView
+        android:id="@+id/calculatorEuroTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="@string/textEuro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorPriceEditText"
+        app:layout_constraintLeft_toRightOf="@+id/calculatorPriceEditText" />
+
+    <TextView
+        android:id="@+id/calculatorPercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="@string/percent"
+        app:layout_constraintBaseline_toBaselineOf="@id/calculatorDiscountEditText"
+        app:layout_constraintLeft_toRightOf="@+id/calculatorDiscountEditText"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/calculatorAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@+id/calculatorAmountEditText"
+        android:text="@string/amount"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorPriceEditText" />
+
+    <LinearLayout
+        android:id="@+id/calculatorAmountButtonsLayout"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/calculatorAmountEditText"
+        app:layout_constraintTop_toBottomOf="@id/calculatorAmountTextView"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/calculatorMinusButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="minusAmount"
+            android:text="@string/minus"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/calculatorPlusButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="plusAmount"
+            android:text="@string/plus"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/calculatorAmountEditText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/calculatorAmountButtonsLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorAmountTextView" />
+
+    <TextView
+        android:id="@+id/calculatorPcsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="@string/pcs"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorAmountEditText"
+        app:layout_constraintLeft_toRightOf="@+id/calculatorAmountEditText" />
+
+    <Button
+        android:id="@+id/calculatorCalculateButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:onClick="calculate"
+        android:text="@string/calculate"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/calculatorTotalEditText"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorTotalTextView" />
+
+    <EditText
+        android:id="@+id/calculatorTotalEditText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/calculatorCalculateButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorTotalTextView" />
+
+    <TextView
+        android:id="@+id/calculatorEuroTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="@string/textEuro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calculatorTotalEditText"
+        app:layout_constraintLeft_toRightOf="@+id/calculatorTotalEditText" />
+
+    <TextView
+        android:id="@+id/calculatorTotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@+id/calculatorTotalEditText"
+        android:text="@string/total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorAmountButtonsLayout" />
+
+    <Button
+        android:id="@+id/calculatorAddToCartButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/addToCart"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorCalculateButton" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Shopping Assistant</string>
+    <string name="btnLogin">Go</string>
+    <string name="textWelcome">Welcome!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="shoppingList">Shopping List</string>
+    <string name="priceCalculator">Calculator</string>
+    <string name="shoppingBasket">Shopping Cart</string>
+    <string name="textEuro">€</string>
+    <string name="textX">x</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">perse</string>
+    <string name="textName">Name</string>
+    <string name="amount">Amount</string>
+    <string name="discount">Discount</string>
+    <string name="price">Price</string>
+    <string name="percent">%</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="pcs">pcs</string>
+    <string name="total">Total</string>
+    <string name="calculate">Calculate</string>
+    <string name="addToCart">Add to Cart</string>
+    <string name="btnAddNewItemToList">Add New Item</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnEmptyCart">Empty Cart</string>
+    <string name="toastHighPrice">Price too high! Maximum price is 999.99</string>
+    <string name="toastHighAmount">Too many pieces! Maximum amount is 999.</string>
+    <string name="dialogNewItemTitle">Add new item</string>
+    <string name="dialogModifyListItemTitle">Modify</string>
+    <string name="btnSave">Save</string>
+    <string name="btnDelete">Delete</string>
+    <string name="item">Item</string>
+    <string name="toastCheckCalculatorFields">Price and/or Amount can\'t be empty!</string>
+    <string name="toastLowAmount">Amount can\'t be 0!</string>
+    <string name="unitPrice">Unit price</string>
+    <string name="toastPriceAndAmountRequired">Unit price and Amount are required to calculate!</string>
+    <string name="cart">Cart</string>
+</resources>

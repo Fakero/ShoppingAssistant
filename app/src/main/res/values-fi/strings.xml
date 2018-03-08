@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shopping Assistant</string>
+    <string name="btnLogin">Mene</string>
+    <string name="textWelcome">Tervetuloa!</string>
+    <string name="shoppingList">Ostoslista</string>
+    <string name="priceCalculator">Hintalaskuri</string>
+    <string name="shoppingBasket">Ostoskori</string>
+    <string name="textEuro">€</string>
+    <string name="textX">x</string>
+    <string name="hello_blank_fragment">perse</string>
+    <string name="textName">Nimi</string>
+    <string name="amount">Määrä</string>
+    <string name="discount">Alennus</string>
+    <string name="price">Hinta</string>
+    <string name="percent">%</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="pcs">kpl</string>
+    <string name="total">Tulos</string>
+    <string name="calculate">Laske</string>
+    <string name="addToCart">Lisää Ostoskoriin</string>
+    <string name="btnAddNewItemToList">Lisää Uusi Ostos</string>
+    <string name="btnAdd">Lisää</string>
+    <string name="btnCancel">Peruuta</string>
+    <string name="btnEmptyCart">Tyhjennä kori</string>
+    <string name="toastHighPrice">Hinta liian korkea! Maksimihinta on 999.99</string>
+    <string name="toastHighAmount">Liian monta kappaletta! Kappaleiden maksimimäärä on 999.</string>
+    <string name="dialogNewItemTitle">Lisää uusi ostos</string>
+    <string name="dialogModifyListItemTitle">Muokkaa</string>
+    <string name="btnSave">Tallenna</string>
+    <string name="btnDelete">Poista</string>
+    <string name="item">Ostos</string>
+    <string name="toastCheckCalculatorFields">Hinta ja/tai Määrä eivät voi olla tyhjiä!</string>
+    <string name="toastLowAmount">Määrä ei voi olla 0!</string>
+    <string name="unitPrice">Kappalehinta</string>
+    <string name="toastPriceAndAmountRequired">Laskeminen vaatii Kappalehinnan ja Määrän</string>
+    <string name="cart">Ostoskori</string>
+</resources>
