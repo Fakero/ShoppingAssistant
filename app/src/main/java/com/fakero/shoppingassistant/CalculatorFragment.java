@@ -247,6 +247,18 @@ public class CalculatorFragment extends Fragment {
         }
     }
 
+    public double calc(double price, double discount, double amount) {
+        if (discount == 0) {
+            return price * amount;
+        }
+        else if (discount > 0 && discount <= 100) {
+            return price * amount * (1 - discount / 100);
+        }
+        else {
+            return 0;
+        }
+    }
+
     public void plusAmount() {
         setAmount(1);
     }
